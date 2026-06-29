@@ -1,0 +1,84 @@
+body{
+    background-color: #000000;/*Page ka base color black set karta hai. Dark theme look deta hai.*/
+    margin: 0;/*Browser ka default spacing hatata hai, taake layout tumhare control main ho.*/
+    padding: 0;/*Browser ka default spacing hatata hai, taake layout tumhare control main ho.*/
+    min-height: 100vh;/*Body kam se kam screen ki full height le, taake content kam ho to bhi background pura dikhe.*/
+    display: flex;/*Body ko flex container banata hai, jis se andar ke elements ko easily align kar sako.*/
+    flex-direction: column;/*Elements ko top se neeche vertically stack karta hai.*/
+    align-items: center;/*h1 aur .container ko horizontally center main lata hai.*/
+    padding-top: 40px;/*Upar se 40px ka gap deta hai, taake content browser ke edge se chipka hua na lage.*/
+}
+
+h1{
+    color: #b2ebf2;/*Light cyan color, jo black background pe achi tarah nazar aaye aur theme se match kare.*/
+    font-family: Arial, sans-serif;/*Clean aur readable font. Agar Arial na mile to koi bhi sans-serif use ho jaye.*/
+    font-size: 42px;/*Heading ko bada aur prominent banata hai.*/
+    text-align: center;/*Heading ko center align karta hai.*/
+    text-transform: uppercase;/*Sara text capital letters main convert karta hai, taake heading bold lage.*/
+    letter-spacing: 3px;/*Letters ke beech space barhata hai, jis se heading stylish aur readable lagti hai.*/
+    margin-bottom: 30px;/*Heading ke neeche space deta hai, taake .container se chipke nahi.*/
+    margin-top: 0;/*Upar se extra margin hatata hai, kyunki body main padding-top already hai.*/
+}
+
+.container{
+    display: flex;/*Teenon blocks ko ek row main rakhne ke liye.*/
+    justify-content: center;/*Blocks ko horizontally center main rakhta hai.*/
+    gap: 25px;/*Blocks ke beech 25px ka space deta hai. margin se behtar hai kyunki automatic handle hota hai.*/
+    width: 98%;/*Container screen ka 98% le, taake sides pe thora sa space bache.*/
+    max-width: 1400px;/*Bari screens pe container bohat zyada wide na ho jaye. 1400px ke baad stop ho jayega.*/
+}
+
+.block1,
+.block2,
+.block3{
+    flex: 0 0 360px;/*Har block ki width 360px fix rakhta hai. Grow ya shrink nahi karega.*/
+    min-height: 280px;/*Kam se kam height 280px, taake content kam ho to bhi sab blocks equal lagen.*/
+    padding: 18px;/*Andar ke content ko border se 18px door rakhta hai, taake chipka hua na lage.*/
+    box-sizing: border-box;/*padding aur border ko width/height main include karta hai. Is se 360px ki width maintain rehti hai.*/
+    background-color: rgba(255,255,255,0.05);/*Halka sa transparent white background. Blocks ko black background se alag dikhata hai.*/
+    border-radius: 10px;/*Corners ko gol karta hai, modern look ke liye.*/
+    border: 2px solid #4dd0e1;/*Cyan color ka 2px border. Theme match karta hai aur blocks ko define karta hai.*/
+}
+
+.block1{
+    color: #00ffff;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    line-height: 1.7;/*Lines ke beech acha space, readability barhata hai.*/
+    text-align: center;/*Paragraph style, dono sides se aligned.*/ 
+}
+.block2{
+    color: #ffffff;
+    font-family: Verdana, sans-serif;/*Screen pe readable sans-serif font.*/
+    font-size: 16px;
+    text-align: center;/*Paragraph style, dono sides se aligned.*/ 
+    line-height: 1.7;/*Lines ke beech acha space, readability barhata hai.*/
+    font-style: italic;/*Emphasis ke liye, quote ya highlight jaisa feel deta hai.*/
+}
+
+.block3{
+     color: #7fffd4;
+    font-family: "Courier New", monospace;/* Monospace font, code ya data ke liye use hota hai.*/
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.7;
+    font-weight: bold;/*Text ko thick karta hai, importance show karne ke liye.*/
+}
+
+h2{
+    color: #3c6d6d;
+    text-align: center;
+    text-transform: uppercase;/*Heading ko capital main karta hai, h1 jaisa style maintain hota hai.*/
+    margin-bottom: 15px;/*Heading ke neeche space, taake block ka text saans le sake.*/
+    font-family: Arial, sans-serif;
+}
+h4.end{
+    text-align: center;
+    color: #9bc8d7;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 25px;
+}
